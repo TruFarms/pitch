@@ -5,11 +5,11 @@ export function SlideProjectVision() {
   return (
     <Card className="w-full max-w-4xl h-[600px] overflow-hidden relative flex items-center justify-center text-center">
       <Image
-        src="https://picsum.photos/1200/800"
-        alt="Cannabis cultivation facility"
+        src="https://picsum.photos/seed/vision/1200/800"
+        alt="Cannabis extraction facility"
         fill
         className="object-cover"
-        data-ai-hint="cannabis farm"
+        data-ai-hint="cannabis extraction"
       />
       <div className="absolute inset-0 bg-black/60" />
       <CardContent className="relative z-10 p-8 text-white">
@@ -20,7 +20,7 @@ export function SlideProjectVision() {
             <span className="text-5xl font-bold text-primary-foreground">TruFarms</span>
           </div>
           <p className="mt-4 text-2xl font-light text-primary-foreground/90">
-            Our vision is to be the leading provider of premium, locally-grown medicinal cannabis, setting new standards for quality, patient care, and sustainable practices in Minnesota.
+            Our vision is to become the leading cannabis extraction hub in Greater Minnesota, combining strict compliance, science-backed manufacturing, and community-focused operations to set new standards for quality and patient care.
           </p>
         </div>
       </CardContent>

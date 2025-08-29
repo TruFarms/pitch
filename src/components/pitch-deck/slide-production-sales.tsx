@@ -5,30 +5,28 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { ChartTooltipContent, ChartContainer } from '@/components/ui/chart'
 
 const salesData = [
-  { year: '2025', production: 1500, sales: 1200 },
-  { year: '2026', production: 3500, sales: 3000 },
-  { year: '2027', production: 5000, sales: 4800 },
-  { year: '2028', production: 5000, sales: 5000 },
+  { month: 'Vape Carts', units: 10000 },
+  { month: 'Gummies (Packs)', units: 5000 },
+  { month: 'Concentrates (kg)', units: 20 },
+  { month: 'Pre-Rolls', units: 25000 },
+  { month: 'Infused Pre-Rolls', units: 10000 },
+  { month: 'Distillate (L)', units: 10 },
 ];
 
 const chartConfig = {
-  production: {
-    label: "Production (lbs)",
+  units: {
+    label: "Monthly Units",
     color: "hsl(var(--primary))",
-  },
-  sales: {
-    label: "Sales (lbs)",
-    color: "hsl(var(--accent))",
-  },
+  }
 }
 
 export function SlideProductionSales() {
   return (
     <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center">
       <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">Production & Sales Forecast</CardTitle>
+        <CardTitle className="text-3xl font-bold">Monthly Production Targets</CardTitle>
         <CardDescription>
-          Projected capacity and sales volume for the first four years of operation.
+          Our facility is designed to meet significant wholesale demand from day one.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -45,11 +43,15 @@ export function SlideProductionSales() {
                 }}
               >
                 <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                <XAxis dataKey="year" />
-                <YAxis label={{ value: 'Pounds (lbs)', angle: -90, position: 'insideLeft' }} />
-                <Tooltip content={<ChartTooltipContent formatter={(value) => `${value} lbs`} />} />
-                <Line type="monotone" dataKey="production" stroke="var(--color-production)" strokeWidth={2} activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="sales" stroke="var(--color-sales)" strokeWidth={2} />
+                <XAxis dataKey="month" />
+                <YAxis
+                  tickFormatter={(value) => value.toLocaleString()}
+                  label={{ value: 'Units', angle: -90, position: 'insideLeft' }}
+                />
+                <Tooltip
+                  content={<ChartTooltipContent formatter={(value, name) => `${(value as number).toLocaleString()} units`} />}
+                />
+                <Line type="monotone" dataKey="units" stroke="var(--color-units)" strokeWidth={2} activeDot={{ r: 8 }} />
               </LineChart>
             </ResponsiveContainer>
           </ChartContainer>

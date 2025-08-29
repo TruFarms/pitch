@@ -1,27 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { User } from "lucide-react"
 
 const teamMembers = [
   {
-    name: "Dr. Alani Vance",
-    role: "Chief Executive Officer",
-    bio: "Expert horticulturalist with 15+ years in agricultural science and a PhD in Plant Pathology. Proven leader in sustainable farming.",
-    initials: "AV",
-    image: "https://i.pravatar.cc/150?u=alani"
+    name: "Quinton Jones",
+    role: "Founder & Owner",
+    bio: "Visionary entrepreneur leading TruFarms to become a key player in Minnesota's cannabis extraction and manufacturing sector. Responsible for overall strategy and business development.",
+    initials: "QJ",
+    image: "https://i.pravatar.cc/150?u=quinton"
   },
   {
-    name: "Marcus Thorne",
-    role: "Chief Operating Officer",
-    bio: "Seasoned operations manager with a decade of experience in regulated industries, ensuring compliance and efficiency.",
-    initials: "MT",
-    image: "https://i.pravatar.cc/150?u=marcus"
+    name: "Operations Manager",
+    role: "Future Hire",
+    bio: "A planned key hire responsible for overseeing daily facility operations, production schedules, and ensuring compliance and efficiency.",
+    initials: "OM",
   },
   {
-    name: "Jenna Ortega",
-    role: "Head of Cultivation",
-    bio: "Master grower with extensive experience in aeroponic systems and craft cannabis cultivation, focused on quality and potency.",
-    initials: "JO",
-    image: "https://i.pravatar.cc/150?u=jenna"
+    name: "Sales & Accounts Manager",
+    role: "Future Hire",
+    bio: "A planned key hire to build and maintain relationships with dispensaries and B2B clients, driving revenue and market penetration.",
+    initials: "SM",
   },
 ];
 
@@ -29,7 +28,7 @@ export function SlideManagementTeam() {
   return (
     <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center">
       <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">Management Team</CardTitle>
+        <CardTitle className="text-3xl font-bold">Leadership</CardTitle>
         <CardDescription>
           The experienced leadership guiding TruFarms to success.
         </CardDescription>
@@ -39,7 +38,11 @@ export function SlideManagementTeam() {
           {teamMembers.map((member) => (
             <div key={member.name} className="text-center flex flex-col items-center">
               <Avatar className="h-24 w-24 mb-4">
-                <AvatarImage src={member.image} alt={member.name} />
+                {member.image ? (
+                  <AvatarImage src={member.image} alt={member.name} />
+                ) : (
+                  <User className="h-12 w-12" />
+                )}
                 <AvatarFallback>{member.initials}</AvatarFallback>
               </Avatar>
               <h3 className="font-semibold text-lg">{member.name}</h3>
@@ -47,6 +50,9 @@ export function SlideManagementTeam() {
               <p className="text-muted-foreground text-sm mt-2">{member.bio}</p>
             </div>
           ))}
+        </div>
+         <div className="mt-6 text-center text-sm text-muted-foreground bg-muted/50 p-3 rounded-md">
+          <p>The initial team will consist of 9 employees, including Extraction and Edibles Technicians, a Packaging Lead, a Compliance Manager, and a General Assistant, ensuring a robust operational launch.</p>
         </div>
       </CardContent>
     </Card>

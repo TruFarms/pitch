@@ -3,24 +3,34 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts"
 import { ChartTooltipContent, ChartContainer } from '@/components/ui/chart'
+import { DollarSign, Users, Hospital, TrendingUp } from "lucide-react"
 
-const chartData = [
-  { year: "2025", marketSize: 15, patientCount: 8 },
-  { year: "2026", marketSize: 35, patientCount: 18 },
-  { year: "2027", marketSize: 55, patientCount: 30 },
-  { year: "2028", marketSize: 75, patientCount: 45 },
-];
-
-const chartConfig = {
-  marketSize: {
-    label: "Market Size ($M)",
-    color: "hsl(var(--primary))",
+const infoItems = [
+  {
+    icon: Users,
+    title: "Olmsted County Population",
+    value: "160,000+",
+    description: "A robust local consumer base from day one."
   },
-  patientCount: {
-    label: "Patients (Thousands)",
-    color: "hsl(var(--accent))",
+  {
+    icon: DollarSign,
+    title: "Est. Monthly Retail Market",
+    value: "~$6M",
+    description: "In Olmsted County alone, based on state projections."
   },
-}
+  {
+    icon: Hospital,
+    title: "The Mayo Clinic Effect",
+    value: "1.3M+ Patients",
+    description: "Annual influx of health-conscious consumers and staff."
+  },
+  {
+    icon: TrendingUp,
+    title: "Our Target Market Share",
+    value: "10%",
+    description: "Capture via branded products and B2B services."
+  },
+]
 
 export function SlideMarketOpportunity() {
   return (
@@ -28,38 +38,32 @@ export function SlideMarketOpportunity() {
       <CardHeader className="text-center">
         <CardTitle className="text-3xl font-bold">Market Opportunity</CardTitle>
         <CardDescription>
-          Projected medicinal cannabis market growth in Rochester, MN.
+          Positioned for success in Minnesota's high-growth cannabis market.
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="h-[400px] w-full">
-          <ChartContainer config={chartConfig} className="w-full h-full">
-            <ResponsiveContainer>
-              <BarChart data={chartData}>
-                <CartesianGrid vertical={false} />
-                <XAxis
-                  dataKey="year"
-                  tickLine={false}
-                  tickMargin={10}
-                  axisLine={false}
-                />
-                <YAxis yAxisId="left" tickFormatter={(value) => `$${value}M`} />
-                <YAxis yAxisId="right" orientation="right" tickFormatter={(value) => `${value}k`} />
-                <Tooltip 
-                  cursor={{ fill: 'hsl(var(--muted))' }} 
-                  content={<ChartTooltipContent 
-                    formatter={(value, name) => {
-                      if (name === "marketSize") return `$${value}M`;
-                      if (name === "patientCount") return `${value}k`;
-                      return `${value}`;
-                    }} 
-                  />} 
-                />
-                <Bar yAxisId="left" dataKey="marketSize" fill="var(--color-marketSize)" radius={4} />
-                <Bar yAxisId="right" dataKey="patientCount" fill="var(--color-patientCount)" radius={4} />
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartContainer>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          {infoItems.map((item, index) => (
+            <div
+              key={item.title}
+              className="bg-card p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="flex justify-center items-center">
+                <div className="p-4 bg-primary/10 rounded-full">
+                  <item.icon className="h-8 w-8 text-primary" />
+                </div>
+              </div>
+              <p className="text-3xl font-bold text-primary mt-4">{item.value}</p>
+              <h3 className="text-lg font-semibold mt-2">{item.title}</h3>
+              <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 text-center bg-muted/50 p-4 rounded-lg">
+          <h4 className="font-semibold text-lg">First Mover Advantage</h4>
+          <p className="text-muted-foreground">
+            As the only licensed extraction operation in Southeast Minnesota at launch, TruFarms will become a critical supply-chain partner for regional brands and retailers, creating a significant barrier to entry for future competitors.
+          </p>
         </div>
       </CardContent>
     </Card>

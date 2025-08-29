@@ -21,15 +21,15 @@ export function SlideProblemSolution() {
             <ul className="mt-4 space-y-3 text-foreground/80">
               <li className="flex items-start gap-2">
                 <strong>Supply Shortage:</strong>
-                <span>Limited local cultivation to meet growing patient demand in Southern Minnesota.</span>
+                <span>No licensed extraction operations in Southeast Minnesota to meet growing consumer demand.</span>
               </li>
               <li className="flex items-start gap-2">
-                <strong>Quality Concerns:</strong>
-                <span>Inconsistent quality from mass-produced cannabis from out-of-state facilities.</span>
+                <strong>Partnership Gap:</strong>
+                <span>Local cultivators and brands lack a regional partner for B2B extraction and white-label manufacturing.</span>
               </li>
               <li className="flex items-start gap-2">
-                <strong>Access Issues:</strong>
-                <span>Patients face long travel times and limited product variety at existing dispensaries.</span>
+                <strong>Market Entry Barrier:</strong>
+                <span>High cost and complexity of setting up extraction labs prevent many microbusinesses from producing their own concentrates.</span>
               </li>
             </ul>
           </div>
@@ -41,16 +41,16 @@ export function SlideProblemSolution() {
             </div>
              <ul className="mt-4 space-y-3 text-foreground/80">
               <li className="flex items-start gap-2">
-                <strong>Local Craft Cultivation:</strong>
-                <span>A Tier 1 craft grower license to produce high-quality, small-batch cannabis locally.</span>
+                <strong>First Mover Advantage:</strong>
+                <span>Launch as the first dedicated cannabis extraction and manufacturing microbusiness in Southeast Minnesota.</span>
               </li>
               <li className="flex items-start gap-2">
-                <strong>Medicinal Focus:</strong>
-                <span>State-of-the-art aeroponic facility designed to produce consistent, high-potency products.</span>
+                <strong>Branded Products:</strong>
+                <span>Produce high-quality vape cartridges, edibles, concentrates, and pre-rolls for direct wholesale to dispensaries.</span>
               </li>
               <li className="flex items-start gap-2">
-                <strong>Strategic Partnership:</strong>
-                <span>Located in Rochester to directly serve the Mayo Clinic patient population and surrounding areas.</span>
+                <strong>B2B Services:</strong>
+                <span>Offer white-label and toll processing extraction services, becoming a critical supply-chain partner for regional brands.</span>
               </li>
             </ul>
           </div>
