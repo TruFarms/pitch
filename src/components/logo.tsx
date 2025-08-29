@@ -1,15 +1,14 @@
+// src/components/logo.tsx
 import Image from "next/image";
+import logo from "@/assets/logo.png"; // ✅ resolves to src/assets/logo.png
 
 export function Logo() {
   return (
-    <div className="flex items-center">
-      <Image
-        src="/logo.png"
-        alt="TruFarms Logo"
-        width={200}
-        height={56}
-        priority
-      />
-    </div>
+    <Image
+      src={logo}
+      alt="TruFarms Logo"
+      priority
+      className="h-36 w-auto"
+    />
   );
 }

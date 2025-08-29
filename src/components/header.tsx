@@ -1,3 +1,4 @@
+// components/header.tsx
 import { Logo } from "@/components/logo";
 
 export function Header() {

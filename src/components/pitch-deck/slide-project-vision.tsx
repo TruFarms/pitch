@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { BookUp } from "lucide-react"
 
 export function SlideProjectVision() {
   return (
@@ -22,6 +25,12 @@ export function SlideProjectVision() {
           <p className="mt-4 text-lg sm:text-2xl font-light text-primary-foreground/90">
             Our vision is to become the leading cannabis extraction hub in Greater Minnesota, combining strict compliance, science-backed manufacturing, and community-focused operations to set new standards for quality and patient care.
           </p>
+          <Link href="https://trufarms.net" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block">
+            <Button>
+              <BookUp className="mr-2 h-4 w-4" />
+              Visit Our Website
+            </Button>
+          </Link>
         </div>
       </CardContent>
     </Card>
