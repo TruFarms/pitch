@@ -1,8 +1,6 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Bar, BarChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts"
-import { ChartTooltipContent, ChartContainer } from '@/components/ui/chart'
 import { DollarSign, Users, Hospital, TrendingUp } from "lucide-react"
 
 const infoItems = [
@@ -34,34 +32,34 @@ const infoItems = [
 
 export function SlideMarketOpportunity() {
   return (
-    <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">Market Opportunity</CardTitle>
-        <CardDescription>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
+      <CardHeader className="text-center px-4 sm:px-6">
+        <CardTitle className="text-2xl sm:text-3xl font-bold">Market Opportunity</CardTitle>
+        <CardDescription className="text-sm sm:text-base">
           Positioned for success in Minnesota's high-growth cannabis market.
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <CardContent className="p-4 sm:p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center">
           {infoItems.map((item, index) => (
             <div
               key={item.title}
-              className="bg-card p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+              className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex justify-center items-center">
-                <div className="p-4 bg-primary/10 rounded-full">
-                  <item.icon className="h-8 w-8 text-primary" />
+                <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
+                  <item.icon className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
                 </div>
               </div>
-              <p className="text-3xl font-bold text-primary mt-4">{item.value}</p>
-              <h3 className="text-lg font-semibold mt-2">{item.title}</h3>
-              <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
+              <p className="text-2xl sm:text-3xl font-bold text-primary mt-4">{item.value}</p>
+              <h3 className="text-base sm:text-lg font-semibold mt-2">{item.title}</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm mt-1">{item.description}</p>
             </div>
           ))}
         </div>
-        <div className="mt-8 text-center bg-muted/50 p-4 rounded-lg">
+        <div className="mt-6 sm:mt-8 text-center bg-muted/50 p-4 rounded-lg">
           <h4 className="font-semibold text-lg">First Mover Advantage</h4>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm sm:text-base">
             As the only licensed extraction operation in Southeast Minnesota at launch, TruFarms will become a critical supply-chain partner for regional brands and retailers, creating a significant barrier to entry for future competitors.
           </p>
         </div>

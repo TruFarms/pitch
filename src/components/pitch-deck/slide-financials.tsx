@@ -48,44 +48,46 @@ const chartConfig = {
 
 export function SlideFinancials() {
   return (
-    <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center overflow-hidden">
-      <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">Financial Projections</CardTitle>
-        <CardDescription>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center overflow-hidden">
+      <CardHeader className="text-center px-4 sm:px-6">
+        <CardTitle className="text-2xl sm:text-3xl font-bold">Financial Projections</CardTitle>
+        <CardDescription className="text-sm sm:text-base">
           Projected growth and profitability over the first three years.
         </CardDescription>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+      <CardContent className="grid grid-cols-1 md:grid-cols-5 gap-4 sm:gap-6 items-center p-4 sm:p-6">
         <div className="md:col-span-2 space-y-4">
-          <h4 className="font-semibold text-center">Per 40lb Run ROI Example</h4>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell>Total Revenue</TableCell>
-                <TableCell className="text-right font-medium text-primary">{formatCurrency(roiData.totalRevenue)}</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>Biomass & Overhead</TableCell>
-                <TableCell className="text-right font-medium text-destructive">- {formatCurrency(roiData.biomassCost + roiData.overhead)}</TableCell>
-              </TableRow>
-              <TableRow className="bg-muted">
-                <TableCell className="font-bold">Net Profit</TableCell>
-                <TableCell className="text-right font-bold text-primary">{formatCurrency(roiData.netProfit)}</TableCell>
-              </TableRow>
-               <TableRow className="bg-primary/10">
-                <TableCell className="font-bold">Return on Investment</TableCell>
-                <TableCell className="text-right font-bold text-primary">{roiData.roi}%</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <h4 className="font-semibold text-center text-base sm:text-lg">Per 40lb Run ROI Example</h4>
+          <div className="text-sm sm:text-base">
+            <Table>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Total Revenue</TableCell>
+                  <TableCell className="text-right font-medium text-primary">{formatCurrency(roiData.totalRevenue)}</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Biomass & Overhead</TableCell>
+                  <TableCell className="text-right font-medium text-destructive">- {formatCurrency(roiData.biomassCost + roiData.overhead)}</TableCell>
+                </TableRow>
+                <TableRow className="bg-muted">
+                  <TableCell className="font-bold">Net Profit</TableCell>
+                  <TableCell className="text-right font-bold text-primary">{formatCurrency(roiData.netProfit)}</TableCell>
+                </TableRow>
+                 <TableRow className="bg-primary/10">
+                  <TableCell className="font-bold">Return on Investment</TableCell>
+                  <TableCell className="text-right font-bold text-primary">{roiData.roi}%</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
         </div>
-        <div className="md:col-span-3 h-[300px] w-full">
+        <div className="md:col-span-3 h-[250px] sm:h-[300px] w-full">
           <ChartContainer config={chartConfig} className="w-full h-full">
             <ResponsiveContainer>
               <BarChart data={projectedData}>
                 <CartesianGrid vertical={false} />
-                <XAxis dataKey="year" tickLine={false} tickMargin={10} axisLine={false} />
-                <YAxis tickFormatter={(value) => formatCurrency(value)} />
+                <XAxis dataKey="year" tickLine={false} tickMargin={10} axisLine={false} tick={{fontSize: 12}} />
+                <YAxis tickFormatter={(value) => formatCurrency(value)} tick={{fontSize: 12}} />
                 <Tooltip cursor={{ fill: 'hsl(var(--muted))' }} content={<ChartTooltipContent formatter={(value) => formatCurrency(value as number)} />} />
                 <Bar dataKey="revenue" fill="var(--color-revenue)" radius={4} />
                 <Bar dataKey="profit" fill="var(--color-profit)" radius={4} />
@@ -94,7 +96,7 @@ export function SlideFinancials() {
           </ChartContainer>
         </div>
       </CardContent>
-       <CardFooter className="justify-center text-sm text-muted-foreground text-center">
+       <CardFooter className="justify-center text-xs sm:text-sm text-muted-foreground text-center px-4 sm:px-6">
           <p>Financial projections show a path to profitability within the first year, scaling to over $700K in net profit by Year 3.</p>
         </CardFooter>
     </Card>

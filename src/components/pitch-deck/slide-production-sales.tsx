@@ -1,16 +1,16 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { ChartTooltipContent, ChartContainer } from '@/components/ui/chart'
 
 const salesData = [
-  { month: 'Vape Carts', units: 10000 },
-  { month: 'Gummies (Packs)', units: 5000 },
-  { month: 'Concentrates (kg)', units: 20 },
-  { month: 'Pre-Rolls', units: 25000 },
-  { month: 'Infused Pre-Rolls', units: 10000 },
-  { month: 'Distillate (L)', units: 10 },
+  { name: 'Vape Carts', units: 10000 },
+  { name: 'Gummies', units: 5000 },
+  { name: 'Concentrates', units: 20 },
+  { name: 'Pre-Rolls', units: 25000 },
+  { name: 'Infused', units: 10000 },
+  { name: 'Distillate', units: 10 },
 ];
 
 const chartConfig = {
@@ -22,37 +22,36 @@ const chartConfig = {
 
 export function SlideProductionSales() {
   return (
-    <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">Monthly Production Targets</CardTitle>
-        <CardDescription>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
+      <CardHeader className="text-center px-4 sm:px-6">
+        <CardTitle className="text-2xl sm:text-3xl font-bold">Monthly Production Targets</CardTitle>
+        <CardDescription className="text-sm sm:text-base">
           Our facility is designed to meet significant wholesale demand from day one.
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <div className="h-[400px] w-full">
+      <CardContent className="p-4 sm:p-6">
+        <div className="h-[350px] sm:h-[400px] w-full">
           <ChartContainer config={chartConfig} className="w-full h-full">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart
+              <BarChart
                 data={salesData}
+                layout="vertical"
                 margin={{
                   top: 5,
-                  right: 30,
+                  right: 20,
                   left: 20,
                   bottom: 5,
                 }}
               >
-                <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                <XAxis dataKey="month" />
-                <YAxis
-                  tickFormatter={(value) => value.toLocaleString()}
-                  label={{ value: 'Units', angle: -90, position: 'insideLeft' }}
-                />
+                <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                <YAxis dataKey="name" type="category" width={80} tick={{fontSize: 12}} />
+                <XAxis type="number" tickFormatter={(value) => value.toLocaleString()} />
                 <Tooltip
-                  content={<ChartTooltipContent formatter={(value, name) => `${(value as number).toLocaleString()} units`} />}
+                  cursor={{fill: 'hsl(var(--muted))'}}
+                  content={<ChartTooltipContent formatter={(value) => `${(value as number).toLocaleString()} units`} />}
                 />
-                <Line type="monotone" dataKey="units" stroke="var(--color-units)" strokeWidth={2} activeDot={{ r: 8 }} />
-              </LineChart>
+                <Bar dataKey="units" fill="var(--color-units)" radius={4} />
+              </BarChart>
             </ResponsiveContainer>
           </ChartContainer>
         </div>

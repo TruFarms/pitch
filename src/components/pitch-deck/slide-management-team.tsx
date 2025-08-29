@@ -26,24 +26,26 @@ const teamMembers = [
 
 export function SlideManagementTeam() {
   return (
-    <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">Leadership</CardTitle>
-        <CardDescription>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
+      <CardHeader className="text-center px-4 sm:px-6">
+        <CardTitle className="text-2xl sm:text-3xl font-bold">Leadership</CardTitle>
+        <CardDescription className="text-sm sm:text-base">
           The experienced leadership guiding TruFarms to success.
         </CardDescription>
       </CardHeader>
-      <CardContent className="pt-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <CardContent className="p-4 sm:p-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {teamMembers.map((member) => (
             <div key={member.name} className="text-center flex flex-col items-center">
-              <Avatar className="h-24 w-24 mb-4">
+              <Avatar className="h-20 w-20 sm:h-24 sm:w-24 mb-4">
                 {member.image ? (
                   <AvatarImage src={member.image} alt={member.name} />
                 ) : (
-                  <User className="h-12 w-12" />
+                  <AvatarFallback>
+                    <User className="h-10 w-10 sm:h-12 sm:w-12" />
+                  </AvatarFallback>
                 )}
-                <AvatarFallback>{member.initials}</AvatarFallback>
+                
               </Avatar>
               <h3 className="font-semibold text-lg">{member.name}</h3>
               <p className="text-primary font-medium">{member.role}</p>

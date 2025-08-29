@@ -4,21 +4,21 @@ import { CheckCircle2, AlertTriangle } from "lucide-react"
 
 export function SlideProblemSolution() {
   return (
-    <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">The Opportunity</CardTitle>
-        <CardDescription>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
+      <CardHeader className="text-center px-4 sm:px-6">
+        <CardTitle className="text-2xl sm:text-3xl font-bold">The Opportunity</CardTitle>
+        <CardDescription className="text-sm sm:text-base">
           Addressing a critical supply gap with a premium, localized solution.
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div className="p-6 bg-destructive/10 rounded-lg">
+      <CardContent className="p-4 sm:p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 items-start">
+          <div className="p-4 sm:p-6 bg-destructive/10 rounded-lg">
             <div className="flex items-center gap-3">
-              <AlertTriangle className="h-8 w-8 text-destructive" />
-              <h3 className="text-2xl font-semibold text-destructive">The Problem</h3>
+              <AlertTriangle className="h-6 w-6 sm:h-8 sm:w-8 text-destructive flex-shrink-0" />
+              <h3 className="text-xl sm:text-2xl font-semibold text-destructive">The Problem</h3>
             </div>
-            <ul className="mt-4 space-y-3 text-foreground/80">
+            <ul className="mt-4 space-y-3 text-foreground/80 text-sm sm:text-base">
               <li className="flex items-start gap-2">
                 <strong>Supply Shortage:</strong>
                 <span>No licensed extraction operations in Southeast Minnesota to meet growing consumer demand.</span>
@@ -34,12 +34,12 @@ export function SlideProblemSolution() {
             </ul>
           </div>
 
-          <div className="p-6 bg-primary/10 rounded-lg">
+          <div className="p-4 sm:p-6 bg-primary/10 rounded-lg">
             <div className="flex items-center gap-3">
-              <CheckCircle2 className="h-8 w-8 text-primary" />
-              <h3 className="text-2xl font-semibold text-primary">Our Solution</h3>
+              <CheckCircle2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
+              <h3 className="text-xl sm:text-2xl font-semibold text-primary">Our Solution</h3>
             </div>
-             <ul className="mt-4 space-y-3 text-foreground/80">
+             <ul className="mt-4 space-y-3 text-foreground/80 text-sm sm:text-base">
               <li className="flex items-start gap-2">
                 <strong>First Mover Advantage:</strong>
                 <span>Launch as the first dedicated cannabis extraction and manufacturing microbusiness in Southeast Minnesota.</span>

@@ -53,17 +53,17 @@ export function SlideContact() {
   }
 
   return (
-    <Card className="w-full max-w-4xl h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold">Connect With Us</CardTitle>
-        <CardDescription>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
+      <CardHeader className="text-center px-4 sm:px-6">
+        <CardTitle className="text-2xl sm:text-3xl font-bold">Connect With Us</CardTitle>
+        <CardDescription className="text-sm sm:text-base">
           For investment opportunities and partnerships, please get in touch.
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-4 sm:p-6">
         <div className="max-w-md mx-auto">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
             <FormField
               control={form.control}
               name="name"
