@@ -6,7 +6,7 @@ import { BookUp } from "lucide-react"
 
 export function SlideProjectVision() {
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] overflow-hidden relative flex items-center justify-center text-center">
+    <Card className="w-full max-w-4xl h-[80svh] md:h-[600px] overflow-hidden relative flex items-center justify-center text-center">
       <Image
         src="https://picsum.photos/seed/vision/1200/800"
         alt="Cannabis extraction facility"
