@@ -3,16 +3,19 @@ import { Handshake, Megaphone, Stethoscope, Users } from "lucide-react"
 
 export function SlideMarketingStrategy() {
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center px-4 sm:px-6">
-        <CardTitle className="text-2xl sm:text-3xl font-bold">Marketing & Sales Strategy</CardTitle>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center corner-accent">
+      <CardHeader className="text-center px-4 sm:px-6 animate-fade-in">
+        <CardTitle className="text-2xl sm:text-3xl font-bold relative inline-block mx-auto">
+          Marketing & Sales Strategy
+          <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
+        </CardTitle>
         <CardDescription className="text-sm sm:text-base">
           A targeted approach to build brand recognition and secure market share.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 p-4 sm:p-8">
         <div className="space-y-6">
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <Stethoscope className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold text-lg">Healthcare Professional Outreach</h3>
@@ -21,7 +24,7 @@ export function SlideMarketingStrategy() {
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <Megaphone className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold text-lg">Digital Presence & Education</h3>
@@ -32,7 +35,7 @@ export function SlideMarketingStrategy() {
           </div>
         </div>
         <div className="space-y-6">
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Handshake className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold text-lg">Dispensary Partnerships (B2B)</h3>
@@ -41,7 +44,7 @@ export function SlideMarketingStrategy() {
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <Users className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold text-lg">Community Engagement</h3>

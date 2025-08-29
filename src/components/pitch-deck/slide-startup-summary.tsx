@@ -3,16 +3,19 @@ import { Rocket, MapPin, Users, Target } from "lucide-react"
 
 export function SlideStartupSummary() {
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center px-4 sm:px-6">
-        <CardTitle className="text-2xl sm:text-3xl font-bold">Startup Summary</CardTitle>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center corner-accent">
+      <CardHeader className="text-center px-4 sm:px-6 animate-fade-in">
+        <CardTitle className="text-2xl sm:text-3xl font-bold relative inline-block mx-auto">
+          Startup Summary
+          <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
+        </CardTitle>
         <CardDescription className="text-sm sm:text-base">
           A brief overview of TruFarms&apos; mission and strategic position.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid md:grid-cols-2 gap-6 text-left p-4 sm:p-8">
-        <div className="space-y-6 animate-fade-in-up">
-          <div className="flex items-start gap-4">
+        <div className="space-y-6">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <Rocket className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold text-lg">Mission</h3>
@@ -21,7 +24,7 @@ export function SlideStartupSummary() {
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <MapPin className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold text-lg">Location</h3>
@@ -31,8 +34,8 @@ export function SlideStartupSummary() {
             </div>
           </div>
         </div>
-        <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
-          <div className="flex items-start gap-4">
+        <div className="space-y-6">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Users className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold text-lg">Team</h3>
@@ -41,7 +44,7 @@ export function SlideStartupSummary() {
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <Target className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold text-lg">Objectives</h3>

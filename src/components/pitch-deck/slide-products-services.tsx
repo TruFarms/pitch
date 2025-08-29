@@ -26,9 +26,12 @@ const productItems = [
 
 export function SlideProductsServices() {
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
-      <CardHeader className="text-center px-4 sm:px-6">
-        <CardTitle className="text-2xl sm:text-3xl font-bold">Products & B2B Services</CardTitle>
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center corner-accent">
+      <CardHeader className="text-center px-4 sm:px-6 animate-fade-in">
+        <CardTitle className="text-2xl sm:text-3xl font-bold relative inline-block mx-auto">
+          Products & B2B Services
+          <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
+        </CardTitle>
         <CardDescription className="text-sm sm:text-base">
           A portfolio of premium, lab-tested cannabis products and manufacturing services.
         </CardDescription>
@@ -37,8 +40,8 @@ export function SlideProductsServices() {
         {productItems.map((item, index) => (
           <div 
             key={item.title}
-            className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow animate-fade-in-up"
-            style={{ animationDelay: `${index * 150}ms` }}
+            className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow animate-fade-in"
+            style={{ animationDelay: `${index * 150 + 200}ms` }}
           >
             <div className="flex justify-center items-center">
               <div className="p-3 sm:p-4 bg-primary/10 rounded-full">

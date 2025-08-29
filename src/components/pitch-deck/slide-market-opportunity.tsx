@@ -32,9 +32,12 @@ const infoItems = [
 
 export function SlideMarketOpportunity() {
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center animate-fade-up">
       <CardHeader className="text-center px-4 sm:px-6">
-        <CardTitle className="text-2xl sm:text-3xl font-bold">Market Opportunity</CardTitle>
+        <CardTitle className="text-2xl sm:text-3xl font-bold relative inline-block mx-auto">
+          Market Opportunity
+          <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
+        </CardTitle>
         <CardDescription className="text-sm sm:text-base">
           Positioned for success in Minnesota's high-growth cannabis market.
         </CardDescription>
@@ -44,8 +47,8 @@ export function SlideMarketOpportunity() {
           {infoItems.map((item, index) => (
             <div
               key={item.title}
-              className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 animate-fade-in-up"
-               style={{ animationDelay: `${index * 150}ms` }}
+              className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 animate-fade-in"
+               style={{ animationDelay: `${index * 150 + 200}ms` }}
             >
               <div className="flex justify-center items-center">
                 <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
@@ -58,7 +61,7 @@ export function SlideMarketOpportunity() {
             </div>
           ))}
         </div>
-        <div className="mt-6 sm:mt-8 text-center bg-muted/50 p-4 rounded-lg animate-fade-in-up" style={{ animationDelay: `${infoItems.length * 150}ms` }}>
+        <div className="mt-6 sm:mt-8 text-center bg-muted/50 p-4 rounded-lg animate-fade-in" style={{ animationDelay: `${(infoItems.length * 150) + 200}ms` }}>
           <h4 className="font-semibold text-lg">First Mover Advantage</h4>
           <p className="text-muted-foreground text-sm sm:text-base">
             As the only licensed extraction operation in Southeast Minnesota at launch, TruFarms will become a critical supply-chain partner for regional brands and retailers, creating a significant barrier to entry for future competitors.
