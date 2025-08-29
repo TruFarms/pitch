@@ -11,7 +11,7 @@ export function SlideStartupSummary() {
         </CardDescription>
       </CardHeader>
       <CardContent className="grid md:grid-cols-2 gap-6 text-left p-4 sm:p-8">
-        <div className="space-y-6">
+        <div className="space-y-6 animate-fade-in-up">
           <div className="flex items-start gap-4">
             <Rocket className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
             <div>
@@ -31,7 +31,7 @@ export function SlideStartupSummary() {
             </div>
           </div>
         </div>
-        <div className="space-y-6">
+        <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
           <div className="flex items-start gap-4">
             <Users className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
             <div>

@@ -1,6 +1,29 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Droplets, Flower2, Beaker, Package } from "lucide-react"
 
+const productItems = [
+    {
+        icon: Flower2,
+        title: "Pre-Rolls & Infused Pre-Rolls",
+        description: "Machine-packed 1g standard pre-rolls and premium distillate/kief/rosin enhanced options."
+    },
+    {
+        icon: Droplets,
+        title: "Vape Cartridges & Gummies",
+        description: "Distillate & live resin vapes, plus vegan/gluten-free gummy 10-packs for precise dosing."
+    },
+    {
+        icon: Beaker,
+        title: "Concentrates",
+        description: "High-potency extracts including shatter, wax, and crumble for experienced consumers."
+    },
+    {
+        icon: Package,
+        title: "B2B Extraction Services",
+        description: "White-label manufacturing and toll processing for licensed cultivators and brands."
+    }
+]
+
 export function SlideProductsServices() {
   return (
     <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
@@ -11,42 +34,21 @@ export function SlideProductsServices() {
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center p-4 sm:p-8">
-        <div className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
-          <div className="flex justify-center items-center">
-            <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
-              <Flower2 className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
+        {productItems.map((item, index) => (
+          <div 
+            key={item.title}
+            className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow animate-fade-in-up"
+            style={{ animationDelay: `${index * 150}ms` }}
+          >
+            <div className="flex justify-center items-center">
+              <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
+                <item.icon className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
+              </div>
             </div>
+            <h3 className="text-md sm:text-lg font-semibold mt-4">{item.title}</h3>
+            <p className="text-muted-foreground text-xs sm:text-sm mt-1">{item.description}</p>
           </div>
-          <h3 className="text-md sm:text-lg font-semibold mt-4">Pre-Rolls & Infused Pre-Rolls</h3>
-          <p className="text-muted-foreground text-xs sm:text-sm mt-1">Machine-packed 1g standard pre-rolls and premium distillate/kief/rosin enhanced options.</p>
-        </div>
-        <div className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
-          <div className="flex justify-center items-center">
-            <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
-              <Droplets className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
-            </div>
-          </div>
-          <h3 className="text-md sm:text-lg font-semibold mt-4">Vape Cartridges & Gummies</h3>
-          <p className="text-muted-foreground text-xs sm:text-sm mt-1">Distillate & live resin vapes, plus vegan/gluten-free gummy 10-packs for precise dosing.</p>
-        </div>
-        <div className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
-          <div className="flex justify-center items-center">
-            <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
-              <Beaker className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
-            </div>
-          </div>
-          <h3 className="text-md sm:text-lg font-semibold mt-4">Concentrates</h3>
-          <p className="text-muted-foreground text-xs sm:text-sm mt-1">High-potency extracts including shatter, wax, and crumble for experienced consumers.</p>
-        </div>
-        <div className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
-          <div className="flex justify-center items-center">
-            <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
-              <Package className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
-            </div>
-          </div>
-          <h3 className="text-md sm:text-lg font-semibold mt-4">B2B Extraction Services</h3>
-          <p className="text-muted-foreground text-xs sm:text-sm mt-1">White-label manufacturing and toll processing for licensed cultivators and brands.</p>
-        </div>
+        ))}
       </CardContent>
     </Card>
   )

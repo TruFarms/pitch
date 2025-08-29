@@ -44,7 +44,8 @@ export function SlideMarketOpportunity() {
           {infoItems.map((item, index) => (
             <div
               key={item.title}
-              className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+              className="bg-card p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 animate-fade-in-up"
+               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="flex justify-center items-center">
                 <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
@@ -57,7 +58,7 @@ export function SlideMarketOpportunity() {
             </div>
           ))}
         </div>
-        <div className="mt-6 sm:mt-8 text-center bg-muted/50 p-4 rounded-lg">
+        <div className="mt-6 sm:mt-8 text-center bg-muted/50 p-4 rounded-lg animate-fade-in-up" style={{ animationDelay: `${infoItems.length * 150}ms` }}>
           <h4 className="font-semibold text-lg">First Mover Advantage</h4>
           <p className="text-muted-foreground text-sm sm:text-base">
             As the only licensed extraction operation in Southeast Minnesota at launch, TruFarms will become a critical supply-chain partner for regional brands and retailers, creating a significant barrier to entry for future competitors.

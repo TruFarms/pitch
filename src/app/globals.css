@@ -4,19 +4,19 @@
 
 @layer base {
   :root {
-    --background: 60 56% 91%;
+    --background: 60 56% 91%; /* Light Beige */
     --foreground: 122 33% 15%;
     --card: 60 56% 94%;
     --card-foreground: 122 33% 15%;
     --popover: 60 56% 94%;
     --popover-foreground: 122 33% 15%;
-    --primary: 122 33% 27%;
+    --primary: 122 33% 27%; /* Earthy Green */
     --primary-foreground: 60 56% 98%;
     --secondary: 60 25% 85%;
     --secondary-foreground: 122 33% 27%;
     --muted: 60 25% 88%;
     --muted-foreground: 122 33% 40%;
-    --accent: 43 91% 38%;
+    --accent: 43 91% 38%; /* Muted Gold */
     --accent-foreground: 60 56% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 56% 98%;
@@ -65,5 +65,22 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+    opacity: 0;
   }
 }
