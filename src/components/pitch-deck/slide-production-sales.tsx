@@ -5,12 +5,12 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { ChartTooltipContent, ChartContainer } from '@/components/ui/chart'
 
 const salesData = [
-  { name: 'Vape Carts', units: 10000 },
-  { name: 'Gummies', units: 5000 },
-  { name: 'Concentrates', units: 20 },
-  { name: 'Pre-Rolls', units: 25000 },
-  { name: 'Infused', units: 10000 },
   { name: 'Distillate', units: 10 },
+  { name: 'Concentrates', units: 20 },
+  { name: 'Gummies', units: 5000 },
+  { name: 'Vape Carts', units: 10000 },
+  { name: 'Infused', units: 10000 },
+  { name: 'Pre-Rolls', units: 25000 },
 ];
 
 const chartConfig = {
