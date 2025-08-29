@@ -7,13 +7,16 @@ import {
 } from "@/components/ui/carousel"
 
 import { Header } from "@/components/header";
-import { SlideIntro } from "@/components/pitch-deck/slide-intro";
+import { SlideProjectVision } from "@/components/pitch-deck/slide-project-vision";
+import { SlideStartupSummary } from "@/components/pitch-deck/slide-startup-summary";
 import { SlideProblemSolution } from "@/components/pitch-deck/slide-problem-solution";
-import { SlideMarket } from "@/components/pitch-deck/slide-market";
-import { SlideInfographics } from "@/components/pitch-deck/slide-infographics";
+import { SlideProductsServices } from "@/components/pitch-deck/slide-products-services";
+import { SlideMarketOpportunity } from "@/components/pitch-deck/slide-market-opportunity";
+import { SlideMarketingStrategy } from "@/components/pitch-deck/slide-marketing-strategy";
+import { SlideProductionSales } from "@/components/pitch-deck/slide-production-sales";
+import { SlideManagementTeam } from "@/components/pitch-deck/slide-management-team";
 import { SlideFinancials } from "@/components/pitch-deck/slide-financials";
-import { SlideMap } from "@/components/pitch-deck/slide-map";
-import { SlideDocument } from "@/components/pitch-deck/slide-document";
+import { SlideFundsRequest } from "@/components/pitch-deck/slide-funds-request";
 import { SlideContact } from "@/components/pitch-deck/slide-contact";
 
 
@@ -30,25 +33,34 @@ export default function Home() {
         >
           <CarouselContent>
             <CarouselItem className="flex items-center justify-center">
-              <SlideIntro />
+              <SlideProjectVision />
+            </CarouselItem>
+            <CarouselItem className="flex items-center justify-center">
+              <SlideStartupSummary />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
               <SlideProblemSolution />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
-              <SlideMarket />
+              <SlideProductsServices />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
-              <SlideInfographics />
+              <SlideMarketOpportunity />
+            </CarouselItem>
+            <CarouselItem className="flex items-center justify-center">
+              <SlideMarketingStrategy />
+            </CarouselItem>
+            <CarouselItem className="flex items-center justify-center">
+              <SlideProductionSales />
+            </CarouselItem>
+            <CarouselItem className="flex items-center justify-center">
+              <SlideManagementTeam />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
               <SlideFinancials />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
-              <SlideMap />
-            </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
-              <SlideDocument />
+              <SlideFundsRequest />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
               <SlideContact />
