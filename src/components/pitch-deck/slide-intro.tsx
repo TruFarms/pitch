@@ -6,8 +6,8 @@ export function SlideIntro() {
   return (
     <Card className="w-full max-w-4xl h-[600px] overflow-hidden relative flex items-center justify-center text-center">
       <Image
-        src="https://picsum.photos/1200/800"
-        alt="Cannabis cultivation facility"
+        src="@/assets/landscapepdland.png"
+        alt="Cannabis products"
         fill
         className="object-cover"
         data-ai-hint="cannabis farm"

@@ -5,17 +5,17 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { ChartTooltipContent, ChartContainer } from '@/components/ui/chart'
 
 const salesData = [
-  { name: 'Distillate', units: 10 },
-  { name: 'Concentrates', units: 20 },
-  { name: 'Gummies', units: 5000 },
-  { name: 'Vape Carts', units: 10000 },
-  { name: 'Infused', units: 10000 },
-  { name: 'Pre-Rolls', units: 25000 },
+  { name: 'Distillate', value: 10, unit: 'Liters' },
+  { name: 'Concentrates', value: 20, unit: 'kg' },
+  { name: 'Gummies', value: 5000, unit: 'units' },
+  { name: 'Vape Carts', value: 10000, unit: 'units' },
+  { name: 'Infused', value: 10000, unit: 'units' },
+  { name: 'Pre-Rolls', value: 25000, unit: 'units' },
 ];
 
 const chartConfig = {
-  units: {
-    label: "Monthly Units",
+  value: {
+    label: "Monthly Amount",
     color: "hsl(var(--primary))",
   }
 }
@@ -48,9 +48,12 @@ export function SlideProductionSales() {
                 <XAxis type="number" tickFormatter={(value) => value.toLocaleString()} />
                 <Tooltip
                   cursor={{fill: 'hsl(var(--muted))'}}
-                  content={<ChartTooltipContent formatter={(value) => `${(value as number).toLocaleString()} units`} />}
+                  content={<ChartTooltipContent formatter={(value, name, item) => {
+                    const { unit } = item.payload;
+                    return `${(value as number).toLocaleString()} ${unit}`;
+                  }} />}
                 />
-                <Bar dataKey="units" fill="var(--color-units)" radius={4} />
+                <Bar dataKey="value" fill="var(--color-value)" radius={4} />
               </BarChart>
             </ResponsiveContainer>
           </ChartContainer>

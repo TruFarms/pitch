@@ -11,7 +11,7 @@ const teamMembers = [
     image: "https://i.pravatar.cc/150?u=quinton"
   },
   {
-    name: "Operations Manager",
+    name: "Alexander McKinnon",
     role: "Future Hire",
     bio: "A planned key hire responsible for overseeing daily facility operations, production schedules, and ensuring compliance and efficiency.",
     initials: "OM",
