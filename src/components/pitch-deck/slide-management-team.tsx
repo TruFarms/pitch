@@ -17,10 +17,11 @@ const teamMembers = [
     initials: "OM",
   },
   {
-    name: "Sales & Accounts Manager",
-    role: "Future Hire",
-    bio: "A planned key hire to build and maintain relationships with dispensaries and B2B clients, driving revenue and market penetration.",
-    initials: "SM",
+    name: "Tyson Carter",
+    role: "Head of Extraction",
+    bio: "Expert in cannabis extraction techniques, Tyson will oversee all extraction processes, ensuring the production of high-quality and pure concentrates.",
+    initials: "TC",
+    image: "https://i.pravatar.cc/150?u=tyson"
   },
 ];
 
