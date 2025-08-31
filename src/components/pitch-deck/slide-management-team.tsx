@@ -12,9 +12,9 @@ const teamMembers = [
   },
   {
     name: "Alexander McKinnon",
-    role: "Future Hire",
-    bio: "A planned key hire responsible for overseeing daily facility operations, production schedules, and ensuring compliance and efficiency.",
-    initials: "OM",
+    role: "Head of Production",
+    bio: "Responsible for overseeing all daily facility operations, managing production schedules, and ensuring both manufacturing compliance and operational efficiency.",
+    initials: "AM",
   },
   {
     name: "Tyson Carter",
