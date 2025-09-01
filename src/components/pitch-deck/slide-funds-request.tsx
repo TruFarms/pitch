@@ -18,9 +18,9 @@ export function SlideFundsRequest() {
             <div className="flex flex-col gap-2">
               <div className="flex justify-between text-xs sm:text-sm">
                 <span className="flex items-center gap-2"><FlaskConical className="inline-block h-4 w-4" />Extraction & C1D1 Lab</span>
-                <span className="font-semibold">75% ($150k)</span>
+                <span className="font-semibold">60% ($120k)</span>
               </div>
-              <Progress value={75} className="h-2" />
+              <Progress value={60} className="h-2" />
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex justify-between text-xs sm:text-sm">
@@ -29,19 +29,19 @@ export function SlideFundsRequest() {
               </div>
               <Progress value={21} className="h-2" />
             </div>
+             <div className="flex flex-col gap-2">
+              <div className="flex justify-between text-xs sm:text-sm">
+                <span className="flex items-center gap-2"><ClipboardList className="inline-block h-4 w-4" />Lease, Legal & Other</span>
+                <span className="font-semibold">15% ($30k)</span>
+              </div>
+              <Progress value={15} className="h-2" />
+            </div>
             <div className="flex flex-col gap-2">
               <div className="flex justify-between text-xs sm:text-sm">
                 <span className="flex items-center gap-2"><Building className="inline-block h-4 w-4" />Pre-Roll Equipment</span>
                 <span className="font-semibold">4% ($8k)</span>
               </div>
               <Progress value={4} className="h-2" />
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex justify-between text-xs sm:text-sm">
-                <span className="flex items-center gap-2"><ClipboardList className="inline-block h-4 w-4" />Lease, Legal & Other</span>
-                <span className="font-semibold">(Covered Separately)</span>
-              </div>
-              <Progress value={0} className="h-2 bg-muted/50" />
             </div>
           </div>
         </div>
