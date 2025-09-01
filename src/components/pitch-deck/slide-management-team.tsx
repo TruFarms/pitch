@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { User } from "lucide-react"
+import { Kjphoto } from "@/components/kjphoto"
 
 const teamMembers = [
   {
@@ -8,7 +9,7 @@ const teamMembers = [
     role: "Founder & Owner",
     bio: "Visionary entrepreneur leading TruFarms to become a key player in Minnesota's cannabis extraction and manufacturing sector. Responsible for overall strategy and business development.",
     initials: "QJ",
-    image: "https://i.pravatar.cc/150?u=quinton"
+    isLocalImage: true
   },
   {
     name: "Alexander McKinnon",
@@ -36,17 +37,20 @@ export function SlideManagementTeam() {
       </CardHeader>
       <CardContent className="p-4 sm:p-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member: any) => (
             <div key={member.name} className="text-center flex flex-col items-center">
               <Avatar className="h-20 w-20 sm:h-24 sm:w-24 mb-4">
-                {member.image ? (
+                {member.isLocalImage ? (
+                  <div className="relative w-full h-full">
+                    <Kjphoto />
+                  </div>
+                ) : member.image ? (
                   <AvatarImage src={member.image} alt={member.name} />
                 ) : (
                   <AvatarFallback>
                     <User className="h-10 w-10 sm:h-12 sm:w-12" />
                   </AvatarFallback>
                 )}
-                
               </Avatar>
               <h3 className="font-semibold text-lg">{member.name}</h3>
               <p className="text-primary font-medium">{member.role}</p>
