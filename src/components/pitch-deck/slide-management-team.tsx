@@ -9,13 +9,14 @@ const teamMembers = [
     role: "Founder & Owner",
     bio: "Visionary entrepreneur leading TruFarms to become a key player in Minnesota's cannabis extraction and manufacturing sector. Responsible for overall strategy and business development.",
     initials: "QJ",
-    isLocalImage: true
+    localImageId: 1
   },
   {
     name: "Alexander McKinnon",
     role: "Head of Production",
     bio: "Responsible for overseeing all daily facility operations, managing production schedules, and ensuring both manufacturing compliance and operational efficiency.",
     initials: "AM",
+    localImageId: 2
   },
   {
     name: "Tyson Carter",
@@ -40,9 +41,9 @@ export function SlideManagementTeam() {
           {teamMembers.map((member: any) => (
             <div key={member.name} className="text-center flex flex-col items-center">
               <Avatar className="h-20 w-20 sm:h-24 sm:w-24 mb-4">
-                {member.isLocalImage ? (
+                {member.localImageId ? (
                   <div className="relative w-full h-full">
-                    <Kjphoto />
+                    <Kjphoto num={member.localImageId} />
                   </div>
                 ) : member.image ? (
                   <AvatarImage src={member.image} alt={member.name} />
