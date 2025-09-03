@@ -18,9 +18,16 @@ export function SlideFundsRequest() {
             <div className="flex flex-col gap-2">
               <div className="flex justify-between text-xs sm:text-sm">
                 <span className="flex items-center gap-2"><FlaskConical className="inline-block h-4 w-4" />Extraction & C1D1 Lab</span>
-                <span className="font-semibold">45% ($180k)</span>
+                <span className="font-semibold">37.5% ($150k)</span>
               </div>
-              <Progress value={45} className="h-2" />
+              <Progress value={37.5} className="h-2" />
+            </div>
+             <div className="flex flex-col gap-2">
+              <div className="flex justify-between text-xs sm:text-sm">
+                <span className="flex items-center gap-2"><ClipboardList className="inline-block h-4 w-4" />Lease, Legal & Other</span>
+                <span className="font-semibold">37.5% ($150k)</span>
+              </div>
+              <Progress value={37.5} className="h-2" />
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex justify-between text-xs sm:text-sm">
@@ -28,13 +35,6 @@ export function SlideFundsRequest() {
                 <span className="font-semibold">21% ($84k)</span>
               </div>
               <Progress value={21} className="h-2" />
-            </div>
-             <div className="flex flex-col gap-2">
-              <div className="flex justify-between text-xs sm:text-sm">
-                <span className="flex items-center gap-2"><ClipboardList className="inline-block h-4 w-4" />Lease, Legal & Other</span>
-                <span className="font-semibold">30% ($120k)</span>
-              </div>
-              <Progress value={30} className="h-2" />
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex justify-between text-xs sm:text-sm">
