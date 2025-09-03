@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { User } from "lucide-react"
 import QuintonImage from "@/assets/kj.jpg";
 import AlexImage from "@/assets/alex.jpg";
+import TysonImage from "@/assets/tyson.jpg";
 
 const teamMembers = [
   {
@@ -24,6 +25,7 @@ const teamMembers = [
     role: "Head of Extraction",
     bio: "Expert in cannabis extraction techniques, Tyson will oversee all extraction processes, ensuring the production of high-quality and pure concentrates.",
     initials: "TC",
+    image: TysonImage,
   },
 ];
 
