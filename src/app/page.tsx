@@ -9,7 +9,8 @@ import {
 import { Header } from "@/components/header";
 import { SlideProjectVision } from "@/components/pitch-deck/slide-project-vision";
 import { SlideStartupSummary } from "@/components/pitch-deck/slide-startup-summary";
-import { SlideProblemSolution } from "@/components/pitch-deck/slide-problem-solution";
+import { SlideProblem } from "@/components/pitch-deck/slide-problem";
+import { SlideSolution } from "@/components/pitch-deck/slide-solution";
 import { SlideProductsServices } from "@/components/pitch-deck/slide-products-services";
 import { SlideMarketOpportunity } from "@/components/pitch-deck/slide-market-opportunity";
 import { SlideMarketingStrategy } from "@/components/pitch-deck/slide-marketing-strategy";
@@ -39,7 +40,10 @@ export default function Home() {
               <SlideStartupSummary />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
-              <SlideProblemSolution />
+              <SlideProblem />
+            </CarouselItem>
+            <CarouselItem className="flex items-center justify-center">
+              <SlideSolution />
             </CarouselItem>
             <CarouselItem className="flex items-center justify-center">
               <SlideProductsServices />
