@@ -48,7 +48,7 @@ const chartConfig = {
 
 export function SlideFinancials() {
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center overflow-hidden">
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center overflow-hidden animate-fade-up">
       <CardHeader className="text-center px-4 sm:px-6">
         <CardTitle className="text-2xl sm:text-3xl font-bold">Financial Projections</CardTitle>
         <CardDescription className="text-sm sm:text-base">

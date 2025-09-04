@@ -44,6 +44,7 @@ export function SlideContact() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values)
     toast({
       title: "Message Sent!",
       description: "Thank you for your interest in TruFarms. We will be in touch shortly.",
@@ -52,7 +53,7 @@ export function SlideContact() {
   }
 
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center">
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center animate-fade-up">
       <CardHeader className="text-center px-4 sm:px-6">
         <CardTitle className="text-2xl sm:text-3xl font-bold">Connect With Us</CardTitle>
         <CardDescription className="text-sm sm:text-base">
