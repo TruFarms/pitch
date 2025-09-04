@@ -13,7 +13,7 @@ export function SlideProjectVision() {
       <div className="absolute inset-0 bg-black/60" />
       <CardContent className="relative z-10 p-4 sm:p-8 text-white">
         <div className="bg-black/50 p-4 sm:p-8 rounded-lg backdrop-blur-sm">
-          <div className="animate-fade-in flex justify-center" style={{ animationDelay: '0.1s' }}>
+          <div className="animate-fade-up flex justify-center" style={{ animationDelay: '0.1s' }}>
             <Logo />
           </div>
           <p className="mt-4 text-lg sm:text-2xl font-light text-primary-foreground/90 animate-fade-up" style={{ animationDelay: '0.2s' }}>
