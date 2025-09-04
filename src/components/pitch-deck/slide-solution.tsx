@@ -14,7 +14,7 @@ export function SlideSolution() {
         </CardDescription>
       </CardHeader>
       <CardContent className="p-4 sm:p-6 flex justify-center">
-        <div className="p-4 sm:p-6 bg-primary/10 rounded-lg max-w-lg w-full">
+        <div className="p-4 sm:p-6 bg-primary/10 rounded-lg max-w-2xl w-full">
           <div className="flex items-center gap-3">
             <CheckCircle2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
             <h3 className="text-xl sm:text-2xl font-semibold text-primary">TruFarms' Strategic Approach</h3>
