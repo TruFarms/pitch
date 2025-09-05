@@ -45,7 +45,7 @@ export function SlideProductsServices() {
           >
             <div className="flex justify-center items-center">
               <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
-                <item.icon className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
+                <item.icon className="h-7 w-7 sm:h-8 sm:w-8 text-chart-3" />
               </div>
             </div>
             <h3 className="text-md sm:text-lg font-semibold mt-4">{item.title}</h3>
