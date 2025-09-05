@@ -103,7 +103,7 @@ export function SlideContact() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
               <Send className="mr-2 h-4 w-4" />
               Send Inquiry
             </Button>
