@@ -1,3 +1,7 @@
+"use client"
+
+import * as React from "react"
+import type { CarouselApi } from "@/components/ui/carousel"
 import {
   Carousel,
   CarouselContent,
@@ -22,51 +26,73 @@ import { SlideContact } from "@/components/pitch-deck/slide-contact";
 
 
 export default function Home() {
+  const [api, setApi] = React.useState<CarouselApi>()
+
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    const handleSelect = (api: CarouselApi) => {
+      const slideNode = api.slideNodes()[api.selectedScrollSnap()]
+      if (slideNode) {
+        slideNode.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    api.on("select", handleSelect)
+
+    return () => {
+      api.off("select", handleSelect)
+    }
+  }, [api])
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
       <main className="flex-1 flex justify-center items-center px-4 sm:px-6 md:px-8 py-4 sm:py-8">
         <Carousel
+          setApi={setApi}
           opts={{
             align: "start",
           }}
           className="w-full max-w-6xl"
         >
           <CarouselContent>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideProjectVision />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideStartupSummary />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideProblem />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideSolution />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideProductsServices />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideMarketOpportunity />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideMarketingStrategy />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideProductionSales />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideManagementTeam />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideFinancials />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideFundsRequest />
             </CarouselItem>
-            <CarouselItem className="flex items-center justify-center">
+            <CarouselItem className="flex items-start justify-center">
               <SlideContact />
             </CarouselItem>
           </CarouselContent>
