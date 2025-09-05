@@ -6,10 +6,10 @@ export function Logo() {
     <Image
       src={logo}
       alt="TruFarms Logo"
-      width={192}
-      height={192}
+      width={250}
+      height={250}
       priority
-      className="h-48 w-auto"
+      className=""
     />
   );
 }
