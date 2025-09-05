@@ -11,16 +11,16 @@ export function SlideProjectVision() {
       <Landing
       />
       <div className="absolute inset-0 bg-black/60" />
-      <CardContent className="relative z-10 p-4 sm:p-8 text-white">
-        <div className="bg-black/50 p-4 sm:p-8 rounded-lg backdrop-blur-sm">
-          <div className="animate-fade-up flex justify-center" style={{ animationDelay: '0.1s' }}>
+      <CardContent className="relative z-10 p-4 sm:p-8 text-primary">
+        <div className="bg-black/50 p-4 sm:p-8 rounded-lg backdrop-blur-sm flex flex-col justify-center h-full">
+          <div className="animate-fade-up flex justify-center pb-2" style={{ animationDelay: '0.1s' }}>
             <Logo />
           </div>
-          <p className="mt-4 text-lg sm:text-2xl font-light text-primary-foreground/90 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <p className="mt-2 text-lg sm:text-2xl font-light text-primary-foreground/90 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Our vision is to become the leading cannabis extraction hub in Greater Minnesota, combining strict compliance, science-backed manufacturing, and community-focused operations to set new standards for quality and patient care.
           </p>
-          <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <Link href="https://trufarms.net" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block">
+          <div className="animate-fade-up mt-6" style={{ animationDelay: '0.4s' }}>
+            <Link href="https://trufarms.net" target="_blank" rel="noopener noreferrer" className="inline-block">
               <Button style={{ backgroundColor: 'hsl(var(--accent))' }}>
                 <BookUp className="mr-2 h-4 w-4" />
                 Visit Our Website
