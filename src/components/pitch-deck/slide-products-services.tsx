@@ -26,7 +26,7 @@ const productItems = [
 
 export function SlideProductsServices() {
   return (
-    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center corner-accent">
+    <Card className="w-full max-w-4xl h-auto md:h-[600px] flex flex-col justify-center corner-accent animate-fade-up">
       <CardHeader className="text-center px-4 sm:px-6 animate-fade-in">
         <CardTitle className="text-2xl sm:text-3xl font-bold relative inline-block mx-auto">
           Products & B2B Services
