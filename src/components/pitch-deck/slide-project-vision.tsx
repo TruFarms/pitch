@@ -14,7 +14,7 @@ export function SlideProjectVision() {
       <CardContent className="relative z-10 p-4 sm:p-8 text-primary">
         <div className="bg-black/50 p-4 sm:p-8 rounded-lg backdrop-blur-sm flex flex-col justify-center h-full">
           <div className="animate-fade-up flex justify-center" style={{ animationDelay: '0.1s' }}>
-            <Logo />
+          <Logo/>
           </div>
           <p className="font-oswald text-2xl sm:text-1xl font-bold tracking-wide uppercase text-primary-foreground/90 animate-fade-up mt-4" style={{ animationDelay: '0.2s' }}>
           At TruFarms, our mission is to lead the way in high-quality cannabis extraction and manufacturing, providing exceptional products for recreational use. We are dedicated 

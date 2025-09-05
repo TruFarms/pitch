@@ -1,15 +1,15 @@
 // src/components/logo.tsx
 import Image from "next/image";
-
+import logo from "@/assets/logo.png"
 export function Logo() {
   return (
     <Image
-      src="/logo.png"
+      src={logo}
       alt="TruFarms Logo"
       width={192}
       height={192}
       priority
-      className="h-32 w-auto"
+      className="h-40 w-auto"
     />
   );
 }
