@@ -53,7 +53,7 @@ export function SlideManagementTeam() {
                 )}
               </Avatar>
               <h3 className="font-semibold text-lg">{member.name}</h3>
-              <p className="text-accent font-medium">{member.role}</p>
+              <p className="text-primary-foreground font-medium">{member.role}</p>
               <p className="text-muted-foreground text-sm mt-2">{member.bio}</p>
             </div>
           ))}

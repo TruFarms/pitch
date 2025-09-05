@@ -14,12 +14,12 @@ export function SlideSolution() {
         </CardDescription>
       </CardHeader>
       <CardContent className="p-4 sm:p-6 flex justify-center">
-        <div className="p-4 sm:p-6 bg-primary/10 rounded-lg max-w-2xl w-full">
+        <div className="p-4 sm:p-6 bg-accent/10 rounded-lg max-w-2xl w-full">
           <div className="flex items-center gap-3">
-            <CheckCircle2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
-            <h3 className="text-xl sm:text-2xl font-semibold text-primary">TruFarms' Strategic Approach</h3>
+            <CheckCircle2 className="h-6 w-6 sm:h-8 sm:w-8 text-accent flex-shrink-0" />
+            <h3 className="text-xl sm:text-2xl font-semibold text-accent">TruFarms' Strategic Approach</h3>
           </div>
-           <ul className="mt-4 space-y-3 text-foreground/80 text-sm sm:text-base">
+           <ul className="mt-4 space-y-3 text-card-foreground/80 text-sm sm:text-base">
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <strong>First Mover Advantage:</strong>
               <span>Launch as the first dedicated cannabis extraction and manufacturing microbusiness in Southeast Minnesota.</span>

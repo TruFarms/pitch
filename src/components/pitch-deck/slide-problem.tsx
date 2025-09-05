@@ -19,7 +19,7 @@ export function SlideProblem() {
             <AlertTriangle className="h-6 w-6 sm:h-8 sm:w-8 text-destructive flex-shrink-0" />
             <h3 className="text-xl sm:text-2xl font-semibold text-destructive">Key Market Challenges</h3>
           </div>
-          <ul className="mt-4 space-y-3 text-foreground/80 text-sm sm:text-base">
+          <ul className="mt-4 space-y-3 text-card-foreground/80 text-sm sm:text-base">
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <strong>Supply Shortage:</strong>
               <span>No licensed extraction operations in Southeast Minnesota to meet growing consumer demand.</span>
