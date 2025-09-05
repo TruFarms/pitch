@@ -16,8 +16,9 @@ export function SlideProjectVision() {
           <div className="animate-fade-up flex justify-center" style={{ animationDelay: '0.1s' }}>
             <Logo />
           </div>
-          <p className="font-oswald text-2xl sm:text-4xl font-bold tracking-wide uppercase text-primary-foreground/90 animate-fade-up mt-4" style={{ animationDelay: '0.2s' }}>
-            Our vision is to become the leading cannabis extraction hub in Greater Minnesota
+          <p className="font-oswald text-2xl sm:text-1xl font-bold tracking-wide uppercase text-primary-foreground/90 animate-fade-up mt-4" style={{ animationDelay: '0.2s' }}>
+          At TruFarms, our mission is to lead the way in high-quality cannabis extraction and manufacturing, providing exceptional products for recreational use. We are dedicated 
+          to supporting our veteran community and offering a welcoming space for medical needs as well.
           </p>
           <div className="animate-fade-up mt-8" style={{ animationDelay: '0.4s' }}>
             <Link href="https://trufarms.net" target="_blank" rel="noopener noreferrer" className="inline-block">
