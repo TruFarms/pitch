@@ -28,25 +28,6 @@ import { SlideContact } from "@/components/pitch-deck/slide-contact";
 export default function Home() {
   const [api, setApi] = React.useState<CarouselApi>()
 
-  React.useEffect(() => {
-    if (!api) {
-      return
-    }
-
-    const handleSelect = (api: CarouselApi) => {
-      const slideNode = api.slideNodes()[api.selectedScrollSnap()]
-      if (slideNode) {
-        slideNode.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-
-    api.on("select", handleSelect)
-
-    return () => {
-      api.off("select", handleSelect)
-    }
-  }, [api])
-
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
