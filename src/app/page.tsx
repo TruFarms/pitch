@@ -12,6 +12,7 @@ import {
 
 import { Header } from "@/components/header";
 import { SlideProjectVision } from "@/components/pitch-deck/slide-project-vision";
+import { SlideMissionVision } from "@/components/pitch-deck/slide-mission-vision";
 import { SlideStartupSummary } from "@/components/pitch-deck/slide-startup-summary";
 import { SlideProblem } from "@/components/pitch-deck/slide-problem";
 import { SlideSolution } from "@/components/pitch-deck/slide-solution";
@@ -42,6 +43,9 @@ export default function Home() {
           <CarouselContent>
             <CarouselItem className="flex items-start justify-center">
               <SlideProjectVision />
+            </CarouselItem>
+            <CarouselItem className="flex items-start justify-center">
+              <SlideMissionVision />
             </CarouselItem>
             <CarouselItem className="flex items-start justify-center">
               <SlideStartupSummary />
