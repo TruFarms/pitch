@@ -16,10 +16,10 @@ export function SlideProjectVision() {
           <div className="animate-fade-up flex justify-center mb-4" style={{ animationDelay: '0.1s' }}>
             <Logo />
           </div>
-          <p className="text-lg sm:text-2xl font-light text-primary-foreground/90 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg sm:text-2xl font-light text-primary-foreground/90 animate-fade-up mt-8" style={{ animationDelay: '0.2s' }}>
             Our vision is to become the leading cannabis extraction hub in Greater Minnesota, combining strict compliance, science-backed manufacturing, and community-focused operations to set new standards for quality and patient care.
           </p>
-          <div className="animate-fade-up mt-8" style={{ animationDelay: '0.4s' }}>
+          <div className="animate-fade-up mt-12" style={{ animationDelay: '0.4s' }}>
             <Link href="https://trufarms.net" target="_blank" rel="noopener noreferrer" className="inline-block">
               <Button style={{ backgroundColor: 'hsl(var(--accent))' }}>
                 <BookUp className="mr-2 h-4 w-4" />
