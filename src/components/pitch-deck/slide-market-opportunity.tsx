@@ -52,10 +52,10 @@ export function SlideMarketOpportunity() {
             >
               <div className="flex justify-center items-center">
                 <div className="p-3 sm:p-4 bg-primary/10 rounded-full">
-                  <item.icon className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
+                  <item.icon className="h-7 w-7 sm:h-8 sm:w-8 text-chart-2" />
                 </div>
               </div>
-              <p className="text-2xl sm:text-3xl font-bold text-primary mt-4">{item.value}</p>
+              <p className="text-2xl sm:text-3xl font-bold text-accent mt-4">{item.value}</p>
               <h3 className="text-base sm:text-lg font-semibold mt-2">{item.title}</h3>
               <p className="text-muted-foreground text-xs sm:text-sm mt-1">{item.description}</p>
             </div>

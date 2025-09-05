@@ -8,7 +8,7 @@ export function SlideFundsRequest() {
       <CardHeader className="text-center px-4 sm:px-6">
         <CardTitle className="text-2xl sm:text-3xl font-bold">Funding Request & Use of Proceeds</CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          Seeking <span className="text-primary font-bold">$400k</span> in startup capital.
+          Seeking <span className="text-accent font-bold">$400k</span> in startup capital.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 p-4 sm:p-8 items-center">
@@ -46,8 +46,8 @@ export function SlideFundsRequest() {
           </div>
         </div>
         <div className="bg-muted/50 p-6 sm:p-8 rounded-lg text-center">
-          <DollarSign className="h-12 w-12 sm:h-16 sm:w-16 text-primary mx-auto mb-4" />
-          <p className="text-3xl sm:text-4xl font-bold text-primary">$400,000</p>
+          <DollarSign className="h-12 w-12 sm:h-16 sm:w-16 text-accent mx-auto mb-4" />
+          <p className="text-3xl sm:text-4xl font-bold text-accent">$400,000</p>
           <p className="text-muted-foreground mt-2 text-sm sm:text-base">Startup Capital for Equipment & Operations</p>
           <p className="text-xs sm:text-sm mt-4">
             This investment will fully fund all necessary extraction, processing, and packaging equipment to make TruFarms operational and profitable within the first year.

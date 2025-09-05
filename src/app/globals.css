@@ -6,26 +6,26 @@
   :root {
     --background: 120 20% 94%; /* Light Green */
     --foreground: 122 33% 15%;
-    --card: 122 33% 27%;
+    --card: 155 30% 30%; /* #376651 */
     --card-foreground: 60 56% 98%;
     --popover: 60 56% 94%;
     --popover-foreground: 122 33% 15%;
-    --primary: 122 33% 27%; /* Earthy Green */
+    --primary: 155 30% 30%; /* #376651 */
     --primary-foreground: 60 56% 98%;
     --secondary: 60 25% 85%;
     --secondary-foreground: 122 33% 27%;
     --muted: 122 33% 35%;
     --muted-foreground: 60 56% 91%;
-    --accent: 43 64% 54%; /* #d5a33d */
+    --accent: 44 65% 55%; /* #d6a43f */
     --accent-foreground: 60 56% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 56% 98%;
     --border: 60 25% 80%;
     --input: 60 25% 82%;
-    --ring: 122 33% 27%;
+    --ring: 155 30% 30%;
     --chart-1: 60 56% 98%;
-    --chart-2: 43 64% 54%;
-    --chart-3: 14 74% 55%; /* #de5d3a */
+    --chart-2: 44 65% 55%; /* #d6a43f */
+    --chart-3: 14 74% 55%; /* #dd5c3b */
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
@@ -125,8 +125,6 @@
     left: 0;
     width: 20px;
     height: 4px;
-    background-color: hsl(var(--primary));
-    transform-origin: top left;
-    transform: rotate(-45deg) translateX(-30%) translateY(-2px);
+    background-color: hsl(var(--accent));
   }
 }

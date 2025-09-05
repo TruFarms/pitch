@@ -20,7 +20,7 @@ const unitProductionData = [
 const chartConfig = {
   value: {
     label: "Monthly Amount",
-    color: "hsl(var(--primary))",
+    color: "hsl(var(--chart-2))",
   }
 }
 
@@ -50,8 +50,8 @@ export function SlideProductionSales() {
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                  <YAxis dataKey="name" type="category" width={80} tick={{fontSize: 12}} />
-                  <XAxis type="number" tickFormatter={(value) => value.toLocaleString()} />
+                  <YAxis dataKey="name" type="category" width={80} tick={{fontSize: 12, fill: 'hsl(var(--card-foreground))'}} />
+                  <XAxis type="number" tickFormatter={(value) => value.toLocaleString()} tick={{fill: 'hsl(var(--card-foreground))'}} />
                   <Tooltip
                     cursor={{fill: 'hsl(var(--muted))'}}
                     content={<ChartTooltipContent formatter={(value, name, item) => {
@@ -81,8 +81,8 @@ export function SlideProductionSales() {
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                  <YAxis dataKey="name" type="category" width={80} tick={{fontSize: 12}} />
-                  <XAxis type="number" tickFormatter={(value) => value.toLocaleString()} />
+                  <YAxis dataKey="name" type="category" width={80} tick={{fontSize: 12, fill: 'hsl(var(--card-foreground))'}} />
+                  <XAxis type="number" tickFormatter={(value) => value.toLocaleString()} tick={{fill: 'hsl(var(--card-foreground))'}} />
                   <Tooltip
                     cursor={{fill: 'hsl(var(--muted))'}}
                     content={<ChartTooltipContent formatter={(value, name, item) => {
