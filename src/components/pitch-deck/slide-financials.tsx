@@ -38,11 +38,11 @@ const formatCurrency = (value: number) => {
 const chartConfig = {
   revenue: {
     label: "Revenue",
-    color: "hsl(var(--primary))",
+    color: "hsl(var(--chart-1))",
   },
   profit: {
     label: "Net Profit",
-    color: "hsl(var(--accent))",
+    color: "hsl(var(--chart-2))",
   },
 }
 
@@ -63,19 +63,19 @@ export function SlideFinancials() {
               <TableBody>
                 <TableRow>
                   <TableCell>Total Revenue</TableCell>
-                  <TableCell className="text-right font-medium text-primary">{formatCurrency(roiData.totalRevenue)}</TableCell>
+                  <TableCell className="text-right font-medium text-primary-foreground">{formatCurrency(roiData.totalRevenue)}</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Biomass & Overhead</TableCell>
                   <TableCell className="text-right font-medium text-destructive">- {formatCurrency(roiData.biomassCost + roiData.overhead)}</TableCell>
                 </TableRow>
-                <TableRow className="bg-muted">
+                <TableRow className="bg-muted/50">
                   <TableCell className="font-bold">Net Profit</TableCell>
-                  <TableCell className="text-right font-bold text-primary">{formatCurrency(roiData.netProfit)}</TableCell>
+                  <TableCell className="text-right font-bold text-primary-foreground">{formatCurrency(roiData.netProfit)}</TableCell>
                 </TableRow>
                  <TableRow className="bg-primary/10">
                   <TableCell className="font-bold">Return on Investment</TableCell>
-                  <TableCell className="text-right font-bold text-primary">{roiData.roi}%</TableCell>
+                  <TableCell className="text-right font-bold text-primary-foreground">{roiData.roi}%</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -86,8 +86,8 @@ export function SlideFinancials() {
             <ResponsiveContainer>
               <BarChart data={projectedData}>
                 <CartesianGrid vertical={false} />
-                <XAxis dataKey="year" tickLine={false} tickMargin={10} axisLine={false} tick={{fontSize: 12}} />
-                <YAxis tickFormatter={(value) => formatCurrency(value)} tick={{fontSize: 12}} />
+                <XAxis dataKey="year" tickLine={false} tickMargin={10} axisLine={false} tick={{fontSize: 12, fill: 'hsl(var(--card-foreground))'}} />
+                <YAxis tickFormatter={(value) => formatCurrency(value)} tick={{fontSize: 12, fill: 'hsl(var(--card-foreground))'}} />
                 <Tooltip cursor={{ fill: 'hsl(var(--muted))' }} content={<ChartTooltipContent formatter={(value) => formatCurrency(value as number)} />} />
                 <Bar dataKey="revenue" fill="var(--color-revenue)" radius={4} />
                 <Bar dataKey="profit" fill="var(--color-profit)" radius={4} />

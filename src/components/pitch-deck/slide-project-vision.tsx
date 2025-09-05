@@ -21,7 +21,7 @@ export function SlideProjectVision() {
           </p>
           <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <Link href="https://trufarms.net" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block">
-              <Button>
+              <Button style={{ backgroundColor: 'hsl(var(--accent))' }}>
                 <BookUp className="mr-2 h-4 w-4" />
                 Visit Our Website
               </Button>
