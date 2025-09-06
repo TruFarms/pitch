@@ -34,7 +34,7 @@ export function SlideInfographics() {
       <CardHeader className="text-center">
         <CardTitle className="text-3xl font-bold">TruFarms at a Glance</CardTitle>
         <CardDescription>
-          Key metrics defining our path to success.
+          Key metrics defining our path to success
         </CardDescription>
       </CardHeader>
       <CardContent>

@@ -33,7 +33,7 @@ export function SlideProductsServices() {
           <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
         </CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          A portfolio of premium, lab-tested cannabis products and manufacturing services.
+          A portfolio of premium, lab-tested cannabis products and manufacturing services
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center p-4 sm:p-8">

@@ -8,7 +8,7 @@ export function SlideFundsRequest() {
       <CardHeader className="text-center px-4 sm:px-6">
         <CardTitle className="text-2xl sm:text-3xl font-bold">Funding Request & Use of Proceeds</CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          Seeking <span className="text-accent font-bold">$400k</span> in startup capital.
+          Seeking <span className="text-accent font-bold">$400k</span> in startup capital
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 p-4 sm:p-8 items-center">

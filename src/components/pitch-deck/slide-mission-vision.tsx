@@ -14,7 +14,7 @@ export function SlideMissionVision() {
       </CardHeader>
       <CardContent className="p-4 sm:p-6 text-center">
         <p className="text-lg sm:text-xl text-card-foreground/90 max-w-3xl mx-auto">
-          "At TruFarms our mission is to lead the way in premium cannabis extraction and manufacturing, providing exceptional products for recreational use. We are dedicated to supporting our veteran community and offering a welcoming space for medical needs as well"
+          Here at TruFarms, our mission is to lead the way in premium cannabis extraction and manufacturing in SouthEast Minnesota<br></br><br></br>Being the first extraction operation in SouthEast MN, TruFarms will become a critical supply-chain partner for regional brands and retailers<br></br><br></br> We are also dedicated to supporting our veteran community and offering a welcoming space for medical needs
         </p>
       </CardContent>
     </Card>

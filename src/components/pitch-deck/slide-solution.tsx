@@ -10,7 +10,7 @@ export function SlideSolution() {
           <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
         </CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          A premium, localized operation to capture a key market.
+          A premium, localized operation to capture a key market
         </CardDescription>
       </CardHeader>
       <CardContent className="p-4 sm:p-6 flex justify-center">
@@ -22,15 +22,15 @@ export function SlideSolution() {
            <ul className="mt-4 space-y-3 text-card-foreground/80 text-sm sm:text-base">
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <strong>First Mover Advantage:</strong>
-              <span>Launch as the first dedicated cannabis extraction and manufacturing microbusiness in Southeast Minnesota.</span>
+              <span>Launch as the first dedicated cannabis extraction and manufacturing microbusiness in Southeast Minnesota</span>
             </li>
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <strong>Branded Products:</strong>
-              <span>Produce high-quality vape cartridges, edibles, concentrates, and pre-rolls for direct wholesale to dispensaries.</span>
+              <span>Produce high-quality vape cartridges, edibles, concentrates, and pre-rolls for direct wholesale to dispensaries</span>
             </li>
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.7s' }}>
               <strong>B2B Services:</strong>
-              <span>Offer white-label and toll processing extraction services, becoming a critical supply-chain partner for regional brands.</span>
+              <span>Offer white-label and toll processing extraction services, becoming a critical supply-chain partner for regional brands</span>
             </li>
           </ul>
         </div>

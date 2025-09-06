@@ -28,7 +28,7 @@ export function SlideMarket() {
       <CardHeader className="text-center">
         <CardTitle className="text-3xl font-bold">Market Analysis</CardTitle>
         <CardDescription>
-          Projected medicinal cannabis market growth in Rochester, MN.
+          Projected medicinal cannabis market growth in Rochester, MN
         </CardDescription>
       </CardHeader>
       <CardContent>

@@ -20,7 +20,7 @@ export function SlideStartupSummary() {
             <div>
               <h3 className="font-semibold text-lg">Mission</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
-                To be the first dedicated cannabis extraction and manufacturing operation in Southeast Minnesota, producing high-quality THC vape cartridges, edibles, and concentrates for licensed dispensaries and B2B partners.
+                To be the first dedicated cannabis extraction and manufacturing operation in Southeast Minnesota, producing high-quality THC vape cartridges, edibles, and concentrates for licensed dispensaries and B2B partners
               </p>
             </div>
           </div>
@@ -29,7 +29,7 @@ export function SlideStartupSummary() {
             <div>
               <h3 className="font-semibold text-lg">Location</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
-                Strategically based in Rochester, MN, to serve the significant patient and consumer population from the Mayo Clinic and the surrounding region, filling a critical gap in local supply.
+                We are strategically based in Rochester, MN, to serve the significant patient and consumer population from the Mayo Clinic and the surrounding region, filling a critical gap in local supply
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export function SlideStartupSummary() {
             <div>
               <h3 className="font-semibold text-lg">Team</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
-                Founded by Quinton Jones and supported by a planned team of 9 specialists in extraction, compliance, sales, and operations to ensure manufacturing excellence and strategic growth.
+                Founded by Quinton Jones and supported by a planned team of 9 specialists in extraction, compliance, sales, and operations to ensure manufacturing excellence and strategic growth
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export function SlideStartupSummary() {
             <div>
               <h3 className="font-semibold text-lg">Objectives</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
-                Launch with branded products in 25 licensed dispensaries, achieve $600K–$1.2M in Year 1 revenue, and become a leading product manufacturer in Southeast Minnesota, scaling to $3.5M+ by Year 3.
+                Launch with branded products in 25 licensed dispensaries, achieve $600K–$1.2M in Year 1 revenue, and become a leading product manufacturer in Southeast Minnesota, scaling to $3.5M+ by Year 3
               </p>
             </div>
           </div>

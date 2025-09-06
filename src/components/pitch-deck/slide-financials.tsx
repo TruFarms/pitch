@@ -52,7 +52,7 @@ export function SlideFinancials() {
       <CardHeader className="text-center px-4 sm:px-6">
         <CardTitle className="text-2xl sm:text-3xl font-bold">Financial Projections</CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          Projected growth and profitability over the first three years.
+          Projected growth and profitability over the first three years
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-5 gap-4 sm:gap-6 items-center p-4 sm:p-6">

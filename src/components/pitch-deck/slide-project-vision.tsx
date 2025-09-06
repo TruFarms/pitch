@@ -17,7 +17,7 @@ export function SlideProjectVision() {
           <Logo/>
           </div>
           <p className="font-oswald text-2xl sm:text-4xl font-bold tracking-wide uppercase text-primary-foreground/90 animate-fade-up mt-4" style={{ animationDelay: '0.2s' }}>
-            Project Vision
+          Pure, Premium, Community-focused cannabis & Extracts
           </p>
           <div className="animate-fade-up mt-8" style={{ animationDelay: '0.4s' }}>
             <Link href="https://trufarms.net" target="_blank" rel="noopener noreferrer" className="inline-block">

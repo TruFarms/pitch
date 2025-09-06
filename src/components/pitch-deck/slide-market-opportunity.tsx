@@ -39,7 +39,7 @@ export function SlideMarketOpportunity() {
           <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
         </CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          Positioned for success in Minnesota's high-growth cannabis market.
+          Positioned for success in Minnesota's high-growth cannabis market
         </CardDescription>
       </CardHeader>
       <CardContent className="p-4 sm:p-6">
@@ -64,7 +64,7 @@ export function SlideMarketOpportunity() {
         <div className="mt-6 sm:mt-8 text-center bg-muted/50 p-4 rounded-lg animate-fade-in" style={{ animationDelay: `${(infoItems.length * 150) + 200}ms` }}>
           <h4 className="font-semibold text-lg">First Mover Advantage</h4>
           <p className="text-muted-foreground text-sm sm:text-base">
-            As the only licensed extraction operation in Southeast Minnesota at launch, TruFarms will become a critical supply-chain partner for regional brands and retailers, creating a significant barrier to entry for future competitors.
+            As the only licensed extraction operation in Southeast Minnesota at launch, TruFarms will become a critical supply-chain partner for regional brands and retailers, creating a significant barrier to entry for future competitors
           </p>
         </div>
       </CardContent>

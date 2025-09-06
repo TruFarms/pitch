@@ -10,7 +10,7 @@ export function SlideProblem() {
           <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-accent"></span>
         </CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          A critical supply gap in a high-demand emerging market.
+          A critical supply gap in a high-demand emerging market
         </CardDescription>
       </CardHeader>
       <CardContent className="p-4 sm:p-6 flex justify-center">
@@ -22,15 +22,15 @@ export function SlideProblem() {
           <ul className="mt-4 space-y-3 text-card-foreground/80 text-sm sm:text-base">
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <strong>Supply Shortage:</strong>
-              <span>No licensed extraction operations in Southeast Minnesota to meet growing consumer demand.</span>
+              <span>No licensed extraction operations in Southeast Minnesota to meet growing consumer demand</span>
             </li>
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <strong>Partnership Gap:</strong>
-              <span>Local cultivators and brands lack a regional partner for B2B extraction and white-label manufacturing.</span>
+              <span>Local cultivators and brands lack a regional partner for B2B extraction and white-label manufacturing</span>
             </li>
             <li className="flex items-start gap-2 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <strong>Market Entry Barrier:</strong>
-              <span>High cost and complexity of setting up extraction labs prevent many microbusinesses from producing their own concentrates.</span>
+              <span>High cost and complexity of setting up extraction labs prevent many microbusinesses from producing their own concentrates</span>
             </li>
           </ul>
         </div>

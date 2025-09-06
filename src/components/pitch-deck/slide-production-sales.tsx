@@ -30,7 +30,7 @@ export function SlideProductionSales() {
       <CardHeader className="text-center px-4 sm:px-6">
         <CardTitle className="text-2xl sm:text-3xl font-bold">Monthly Production Targets</CardTitle>
         <CardDescription className="text-sm sm:text-base">
-          Our facility is designed to meet significant wholesale demand from day one.
+          Our facility is designed to meet significant wholesale demand from day one
         </CardDescription>
       </CardHeader>
       <CardContent className="p-4 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
